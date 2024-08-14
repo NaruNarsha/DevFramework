@@ -9,11 +9,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>VContainer</RootNamespace>
-    <ProjectGuid>{06943220-55F4-6D44-D7AC-ECEC56ABBFC6}</ProjectGuid>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{755E5610-F91B-3ED9-3D10-6EB5252D5160}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>VContainer</AssemblyName>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -57,89 +57,8 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IPostFixedTickable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IPostTickable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\AwaitableExtensions.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\VContainerSettings.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Registration.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Diagnostics\DiagnosticsCollector.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Diagnostics\DiagnosticsInfo.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\ContainerLocal.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\TypeKeyHashTable2.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\UnmanagedSystemRegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\TypeAnalyzer.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\RegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\IObjectResolverExtensions.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceProviders\ExistingInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\ContainerBuilderExtensions.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\ContainerBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Diagnostics\RegisterInfo.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IPostInitializable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Diagnostics\DiagnosticsContext.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InjectorCache.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\ActionInstaller.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\InstanceProviders\SystemInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\EntryPointExceptionHandler.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\ComponentRegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IPostLateTickable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\IInstaller.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IPostStartable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\FuncRegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\SystemRegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IInitializable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceProviders\ContainerLocalInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\BuilderCallbackDisposable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\InstanceProviders\FindComponentProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\DisposeLoopItem.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\ObjectResolverUnityExtensions.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\FreeList.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceProviders\ContainerInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\InstanceProviders\ExistingComponentProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceProviders\CollectionInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\LifetimeScope.AwakeScheduler.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\InjectAttribute.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\CompositeDisposable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\WorldConfigurationHelper.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\EntryPointDispatcher.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\FixedTypeKeyHashTable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Registry.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\ListPool.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\LifetimeScope.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceProviders\InstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\IInjector.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\VContainerException.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InjectParameter.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\OpenGenericRegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IFixedTickable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceProviders\OpenGenericInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Diagnostics\ResolveInfo.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\PlayerLoopHelper.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\InstanceProviders\WorldInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\PlayerLoopRunner.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\InstanceProviders\NewGameObjectProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\CappedArrayPool.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceProviders\FuncInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\IInjectParameter.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\ILateTickable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\InstanceRegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\WorldRegistrationBuilder.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\InstanceProviders\UnmanagedSystemInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\ReflectionInjector.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\ContainerBuilderUnityExtensions.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IStartable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\IInstanceProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\ParentReference.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Container.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\UnmanagedSystemReference.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\InstanceProviders\PrefabComponentProvider.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Unity\PlayerLoopItem.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\ITickable.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Internal\RuntimeTypeCache.cs" />
-    <Compile Include="Assets\Plugins\VContainer\Runtime\Annotations\IAsyncStartable.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Plugins\VContainer\Runtime\VContainer.asmdef" />
+    <Compile Include="Assets\Project.DevFramework\Runtime\Scripts\Scene\BootStrap\BootStrap.cs" />
+    <Compile Include="Assets\Project.DevFramework\Runtime\Scripts\Scene\BootStrap\BootStrapLifetimeScope.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -378,39 +297,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.31f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Graphs">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.31f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.31f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.31f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.31f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.1.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -798,13 +684,105 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
+      <Project>{E9CA7BB4-9858-DB3C-7E0B-1751668FF456}</Project>
+      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{4DA840CC-1335-966F-F820-892925E7D933}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
+      <Project>{154C871F-1BBC-27EF-6FE7-A0F37822C7F1}</Project>
+      <Name>Unity.VisualScripting.Shared.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{41E8D8E2-F33B-9A4C-17F2-784C6ADE2989}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{D006DF97-DC3F-B4BE-9B9B-D7F23E8939D2}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
+      <Project>{51951C1C-3C13-8959-29D4-DAB0E86ABE5C}</Project>
+      <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
+      <Project>{7D80AC51-6D48-22D7-CF92-B1275F45DA2D}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{AFB5F5B3-6D90-9C17-FD27-B17AB3256AEC}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{C8F374B9-5C36-9189-2B99-FCC82EAFB12D}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
+      <Project>{09806269-C954-1501-9F9F-3A2E70357DD3}</Project>
+      <Name>Unity.VisualScripting.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{8ED300F8-4876-D897-3F67-8FD33F1DF23A}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
+      <Project>{C011D917-274B-F586-85B8-4846BD7116CA}</Project>
+      <Name>Unity.VisualScripting.State.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
+      <Project>{EB162B76-7590-B532-1D9B-F7A909FF1BB2}</Project>
+      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
+      <Project>{7427CE18-0DFA-5BEA-B4F2-CFF360AD1405}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{10A68B1D-84D8-A904-E090-B0C02D888661}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{926D4D0C-EB98-2F0C-D404-2C5DC303C272}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{3AB48253-A6C6-2A6F-1C70-66B5814A56D6}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{7F51ED91-FA08-9232-2498-7B09296B7329}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
+      <Project>{520E9D9F-450E-E04D-5D62-731E48AF292B}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{B6788326-70F8-CB19-E736-A4CF8D81037B}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{486A62C3-3B18-58F1-7168-57D3A0C5E8F4}</Project>
+      <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
+      <Project>{DAF4D449-2399-5196-15F3-21C2198739C7}</Project>
+      <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
+      <Project>{22519BA6-161B-66E9-4125-708782EEBEC4}</Project>
+      <Name>Unity.EditorCoroutines.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="VContainer.csproj">
+      <Project>{06943220-55F4-6D44-D7AC-ECEC56ABBFC6}</Project>
+      <Name>VContainer</Name>
+    </ProjectReference>
+    <ProjectReference Include="VContainer.Editor.csproj">
+      <Project>{7CB607E9-D325-D94B-8B10-7E5137EF5334}</Project>
+      <Name>VContainer.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
